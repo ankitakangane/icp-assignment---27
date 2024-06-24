@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="k()">
+    <button type="button" onclick="sayHi()">
+      click here
+    </button>
+     </br>     </br>     </br>
+
+    <button type="button" ondblclick="sayHello()">
+        click here
+      </button>
+    </br>     </br>     </br>
+
+      <img src="./img.webp" height="200px" 
+      onmouseover="a()"
+      onmousemove="b()"
+      onmouseout="c()"/>
+
+    </br>     </br>     </br>
+    <input type="text"
+    onkeypress="p()"
+    onkeydown="d()"
+    onkeyup="u()"/>
+
+</br>     </br>     </br>
+<input type="text" onchange="c()"/> 
+    <script>
+        //click
+        function sayHi(){
+            console.log(`######### HII ###########`);
+        }
+        //doubleclick
+        function sayHello()
+        {
+            console.log(`********** HELLO ***********`)
+        }
+        //1.mouseover   2.mousemove   3.mouseout
+        function a(){
+            console.log(`XXXXXXXXX`)
+        }
+        function b(){
+            console.log(`YYYYYYYYY`)
+        }
+        function c(){
+            console.log(`ZZZZZZZZ`)
+        }
+        //1.keypress  2. keydown   3.keyup
+
+        function d(){
+            console.log(`key is down`);
+        }
+        function p(){
+            console.log(`key is pressed`);
+        }
+        function u(){
+            console.log(`key is up`);
+        }
+        //change
+        function c(){
+            console.log(`changes is occured`);
+        } 
+        //load
+        function k(){
+            console.log(`page is loaded`);
+        }
+        
+        
+        
+    </script>
+</body>
+</html>
