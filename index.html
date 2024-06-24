@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body onload="k()">
+<body onload="load()">
     <button type="button" onclick="sayHi()">
       click here
     </button>
@@ -17,18 +17,18 @@
     </br>     </br>     </br>
 
       <img src="./img.webp" height="200px" 
-      onmouseover="a()"
-      onmousemove="b()"
-      onmouseout="c()"/>
+      onmouseover="over()"
+      onmousemove="move()"
+      onmouseout="out()"/>
 
     </br>     </br>     </br>
     <input type="text"
-    onkeypress="p()"
-    onkeydown="d()"
-    onkeyup="u()"/>
+    onkeypress="press()"
+    onkeydown="down()"
+    onkeyup="up()"/>
 
 </br>     </br>     </br>
-<input type="text" onchange="c()"/> 
+<input type="text" onchange="change()"/> 
     <script>
         //click
         function sayHi(){
@@ -40,32 +40,32 @@
             console.log(`********** HELLO ***********`)
         }
         //1.mouseover   2.mousemove   3.mouseout
-        function a(){
+        function over(){
             console.log(`XXXXXXXXX`)
         }
-        function b(){
+        function move(){
             console.log(`YYYYYYYYY`)
         }
-        function c(){
+        function out(){
             console.log(`ZZZZZZZZ`)
         }
         //1.keypress  2. keydown   3.keyup
 
-        function d(){
+        function down(){
             console.log(`key is down`);
         }
-        function p(){
+        function press(){
             console.log(`key is pressed`);
         }
-        function u(){
+        function up(){
             console.log(`key is up`);
         }
         //change
-        function c(){
+        function change(){
             console.log(`changes is occured`);
         } 
         //load
-        function k(){
+        function load(){
             console.log(`page is loaded`);
         }
         
